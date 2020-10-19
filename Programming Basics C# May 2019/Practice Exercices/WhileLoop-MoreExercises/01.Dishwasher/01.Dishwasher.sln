@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Dishwasher", "01.Dishwasher.csproj", "{119484FA-8B31-45A2-A9CC-2566292E4FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{119484FA-8B31-45A2-A9CC-2566292E4FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119484FA-8B31-45A2-A9CC-2566292E4FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119484FA-8B31-45A2-A9CC-2566292E4FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119484FA-8B31-45A2-A9CC-2566292E4FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

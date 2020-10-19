@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerCompany", "ComputerCompany\ComputerCompany.csproj", "{569C78A5-69FC-4A20-A2EE-2552F2745AAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerCompany2", "ComputerCompany2\ComputerCompany2.csproj", "{447D3584-4E1A-44B3-BB9A-F636212A25B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoLibrary", "VideoLibrary\VideoLibrary.csproj", "{493F83C9-872C-4894-8969-852E1DC2B973}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{569C78A5-69FC-4A20-A2EE-2552F2745AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569C78A5-69FC-4A20-A2EE-2552F2745AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569C78A5-69FC-4A20-A2EE-2552F2745AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569C78A5-69FC-4A20-A2EE-2552F2745AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447D3584-4E1A-44B3-BB9A-F636212A25B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447D3584-4E1A-44B3-BB9A-F636212A25B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447D3584-4E1A-44B3-BB9A-F636212A25B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447D3584-4E1A-44B3-BB9A-F636212A25B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493F83C9-872C-4894-8969-852E1DC2B973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493F83C9-872C-4894-8969-852E1DC2B973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493F83C9-872C-4894-8969-852E1DC2B973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493F83C9-872C-4894-8969-852E1DC2B973}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
