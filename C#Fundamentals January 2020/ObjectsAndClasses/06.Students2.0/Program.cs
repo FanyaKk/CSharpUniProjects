@@ -10,35 +10,31 @@ namespace _06.Students2._0
         {
             List<Student> students = new List<Student>();
 
-            string command;
+            string command = Console.ReadLine();
 
-            while ((command = Console.ReadLine()) != "end")
+            while (command != "end")
             {
-                string[] token = command.Split();
-              
-                string firstName = token[0];
-                string lastName = token[1];
-                int age = int.Parse(token[2]);
-                string hometown = token[3];
-                
+                string[] studentInfo = command.Split().ToArray();
 
-                if (IsStudentExisting(students, firstName, lastName))
+                string firstName = studentInfo[0];
+                string lastName = studentInfo[1];
+                int age = int.Parse(studentInfo[2]);
+                string town = studentInfo[3];
+
+
+                if (IsExistingStudent(students, firstName, lastName))
                 {
-                    Student student = GetStudents(students, firstName, lastName);
-
-                    student.Age = age;
-                    student.Hometown = hometown;
                     //Student existingStudent = new Student();
 
-                    //foreach (Student student in students)
-                    //{
-                    //    if (student.FirstName == firstName && student.LastName == lastName)
-                    //    {
-                    //        existingStudent = student;
-                    //        existingStudent.Age = age;
-                    //        existingStudent.Hometown = hometown;
-                    //    }
-                    //}
+                    foreach (var student in students)
+                    {
+                        if (student.FirstName == firstName && student.LastName == lastName)
+                        {
+                            //existingStudent = student;
+                            student.Age = age;
+                            student.Hometown = town;
+                        }   
+                    }
                 }
                 else
                 {
@@ -47,47 +43,115 @@ namespace _06.Students2._0
                         FirstName = firstName,
                         LastName = lastName,
                         Age = age,
-                        Hometown = hometown
+                        Hometown = town
                     };
                     students.Add(student);
-
-                }        
+                }
+                command = Console.ReadLine();
             }
-            string town = Console.ReadLine();
+            string hometown = Console.ReadLine();
 
             List<Student> filteredStudents = students
-                .Where(s => s.Hometown == town)
+                .Where(s => s.Hometown == hometown)
                 .ToList();
-
             foreach (var student in filteredStudents)
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
             }
         }
-        static bool IsStudentExisting(List<Student> students, string firstName, string lastName)
+
+        static bool IsExistingStudent(List<Student>students, string firstName, string LastName)
         {
-            foreach (Student student in students)
+            foreach (var student in students)
             {
-                if (student.FirstName == firstName && student.LastName == lastName)
+                if (student.FirstName == firstName && student.LastName == LastName)
                 {
                     return true;
                 }
             }
-
             return false;
         }
-        static Student GetStudents(List<Student> students, string firstName, string lastName)
-        {
-            Student existingStudents = null;
 
-            foreach (Student student in students)
-            {
-                if (student.FirstName == firstName && student.LastName == lastName)
-                {
-                    existingStudents = student;
-                }
-            }
-            return existingStudents;
-        }
+        //    List<Student> students = new List<Student>();
+
+        //    string command;
+
+        //    while ((command = Console.ReadLine()) != "end")
+        //    {
+        //        string[] token = command.Split();
+              
+        //        string firstName = token[0];
+        //        string lastName = token[1];
+        //        int age = int.Parse(token[2]);
+        //        string hometown = token[3];
+                
+
+        //        if (IsStudentExisting(students, firstName, lastName))
+        //        {
+        //            Student student = GetStudents(students, firstName, lastName);
+
+        //            student.Age = age;
+        //            student.Hometown = hometown;
+        //            //Student existingStudent = new Student();
+
+        //            //foreach (Student student in students)
+        //            //{
+        //            //    if (student.FirstName == firstName && student.LastName == lastName)
+        //            //    {
+        //            //        existingStudent = student;
+        //            //        existingStudent.Age = age;
+        //            //        existingStudent.Hometown = hometown;
+        //            //    }
+        //            //}
+        //        }
+        //        else
+        //        {
+        //            Student student = new Student()
+        //            {
+        //                FirstName = firstName,
+        //                LastName = lastName,
+        //                Age = age,
+        //                Hometown = hometown
+        //            };
+        //            students.Add(student);
+
+        //        }        
+        //    }
+        //    string town = Console.ReadLine();
+
+        //    List<Student> filteredStudents = students
+        //        .Where(s => s.Hometown == town)
+        //        .ToList();
+
+        //    foreach (var student in filteredStudents)
+        //    {
+        //        Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
+        //    }
+        //}
+        //static bool IsStudentExisting(List<Student> students, string firstName, string lastName)
+        //{
+        //    foreach (Student student in students)
+        //    {
+        //        if (student.FirstName == firstName && student.LastName == lastName)
+        //        {
+        //            return true;
+        //        }
+        //    }
+
+        //    return false;
+        //}
+        //static Student GetStudents(List<Student> students, string firstName, string lastName)
+        //{
+        //    Student existingStudents = null;
+
+        //    foreach (Student student in students)
+        //    {
+        //        if (student.FirstName == firstName && student.LastName == lastName)
+        //        {
+        //            existingStudents = student;
+        //        }
+        //    }
+        //    return existingStudents;
+        //}
     }
 }

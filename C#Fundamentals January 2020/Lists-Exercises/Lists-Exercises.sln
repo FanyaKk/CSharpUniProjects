@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.AppendArrays", "07.Appen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.AnonymousThreat", "08.AnonymousThreat\08.AnonymousThreat.csproj", "{736CBC98-168A-4B0D-88A7-23599A9BB316}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.PokemonDoNotGo", "09.PokemonDoNotGo\09.PokemonDoNotGo.csproj", "{4C30E07D-A20A-4CDA-8F43-4DA3F2FA9E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SoftuniCoursePlanning", "10.SoftuniCoursePlanning\10.SoftuniCoursePlanning.csproj", "{3523E7FE-6AA7-4DB4-A760-BF66D117BEDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,5 +59,13 @@ Global
 		{736CBC98-168A-4B0D-88A7-23599A9BB316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736CBC98-168A-4B0D-88A7-23599A9BB316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736CBC98-168A-4B0D-88A7-23599A9BB316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C30E07D-A20A-4CDA-8F43-4DA3F2FA9E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C30E07D-A20A-4CDA-8F43-4DA3F2FA9E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C30E07D-A20A-4CDA-8F43-4DA3F2FA9E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C30E07D-A20A-4CDA-8F43-4DA3F2FA9E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3523E7FE-6AA7-4DB4-A760-BF66D117BEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3523E7FE-6AA7-4DB4-A760-BF66D117BEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3523E7FE-6AA7-4DB4-A760-BF66D117BEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3523E7FE-6AA7-4DB4-A760-BF66D117BEDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

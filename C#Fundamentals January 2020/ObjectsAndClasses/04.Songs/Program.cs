@@ -13,21 +13,23 @@ namespace _04.Songs
 
             for (int i = 0; i < numberOfSongs; i++)
             {
-                string[] songInformation = Console.ReadLine().Split('_').ToArray();
-                string type = songInformation[0];
-                string name = songInformation[1];
-                string time = songInformation[2];
+                string[] songData = Console.ReadLine().Split("_").ToArray();
+                string type = songData[0];
+                string name = songData[1];
+                string time = songData[2];
 
                 Song song = new Song();
+
                 song.TypeList = type;
                 song.Name = name;
                 song.Time = time;
 
                 songs.Add(song);
             }
-            string typeList = Console.ReadLine();
 
-            if(typeList == "all")
+            string typeListPrint = Console.ReadLine();
+
+            if (typeListPrint == "all")
             {
                 foreach (var song in songs)
                 {
@@ -37,15 +39,13 @@ namespace _04.Songs
             else
             {
                 List<Song> filteredSong = songs
-                .Where(s => s.TypeList == typeList)
-                .ToList();
-
+                    .Where(s => s.TypeList == typeListPrint)
+                    .ToList();
                 foreach (var song in filteredSong)
                 {
                     Console.WriteLine(song.Name);
                 }
             }
-            
         }
     }
 }

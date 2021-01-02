@@ -3,8 +3,7 @@ namespace _07.StoreBoxes
 {
     public class Item
     {
-        public Item()
-        {
-        }
+        public string Name { get; set; }
+        public double Price { get; set; }
     }
 }
